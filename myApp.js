@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+require('dotenv').config();
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
